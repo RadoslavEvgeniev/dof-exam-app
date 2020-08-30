@@ -23,6 +23,10 @@ spec:
           image: asbis92/nginx-host:%IMAGE-PLACEHOLDER%
           ports:
             - containerPort: 80
+          volumes:
+           - ./app:/site
+          links:
+            - php-host
 ---
 apiVersion: v1
 kind: Service
