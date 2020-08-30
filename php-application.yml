@@ -35,5 +35,10 @@ metadata:
   labels:
     app: php-app
 spec:
+  type: NodePort
+  ports:
+    - port: 9000
+      nodePort: 30002
+      protocol: TCP
   selector:
     app: php-app
