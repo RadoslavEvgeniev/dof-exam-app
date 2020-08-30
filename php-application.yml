@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: php-host
-          image: asbis92/k8s-jenkins:%IMAGE-PLACEHOLDER%
+          image: asbis92/php-host:%IMAGE-PLACEHOLDER%
           ports:
             - containerPort: 80
 ---
